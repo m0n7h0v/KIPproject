@@ -20,6 +20,6 @@ public class DeviceController {
         Iterable<Device> devices = deviceRepo.findAll();
         model.addAttribute("devices",devices);
 
-        return "all";
+        return "showAllDevices";
     }
 }
