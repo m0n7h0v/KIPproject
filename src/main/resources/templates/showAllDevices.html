@@ -6,20 +6,23 @@
 
 </head>
 <body>
+
+<div>
 <table>
     <tr>
         <th>Название</th>
         <th>Количество</th>
         <th>Описание</th>
-    </tr>
-    <th:block th:each="device : ${devices}">
-        <tr>
-            <td th:text="${device.getDeviceName()}"></td>
+         <tr>
+        </tr>
+        <th:block th:each="device : ${devices}">
+        <td th:text="${device.getDeviceName()}"></td>
             <td th:text="${device.getNumberOfDevices()}"></td>
-            <td th:text="${device.getDescriptionDevices()}"></td>
+            <td th:text="${device.getDeviceDescription()}"></td>
 
         </tr>
     </th:block>
 </table>
+</div>
 </body>
 </html>

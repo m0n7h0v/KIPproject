@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Form</h1>
+<form action="#" th:action="@{add}" th:object="${device}" method="post">
+    <p>Название: <input type="text" th:field="*{deviceName}" /></p>
+    <p>Количество: <input type="text" th:field="*{numberOfDevices}" /></p>
+    <p>Описание: <input type="text" th:field="*{deviceDescription}" /></p>
+    <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+</form>
+</body>
+</html>

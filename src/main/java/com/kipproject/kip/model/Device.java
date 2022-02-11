@@ -18,7 +18,7 @@ public class Device {
 
     private Integer numberOfDevices;
 
-    private String descriptionDevices;
+    private String deviceDescription;
 
     public Integer getDeviceId() {
         return deviceId;
@@ -44,11 +44,11 @@ public class Device {
         this.numberOfDevices = numberOfDevices;
     }
 
-    public String getDescriptionDevices() {
-        return descriptionDevices;
+    public String getDeviceDescription() {
+        return deviceDescription;
     }
 
-    public void setDescriptionDevices(String descriptionDevices) {
-        this.descriptionDevices = descriptionDevices;
+    public void setDeviceDescription(String descriptionDevices) {
+        this.deviceDescription = descriptionDevices;
     }
 }
