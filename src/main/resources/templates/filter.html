@@ -11,6 +11,46 @@
     </p>
 
 </form>
+
+<div class="row">
+    <table class="table table-hover">
+        <thead>
+        <tr class="success">
+            <th> Серийный номер </th>
+            <th> Имя пользователя </th>
+            <th> Пароль </th>
+        </tr>
+        </thead>
+        <tr th:each="device:${deviceByDeviceName}">
+            <td><input type="checkbox" class="check"></td>
+            <td th:text="${device.getDeviceName()}"></td>
+            <td th:text="${device.getNumberOfDevices()}"></td>
+            <td th:text="${device.getDeviceDescription()}"></td>
+
+            <td>
+                <button type = "button" class = "btn btn-default"> Изменить </button>
+                <button type = "button" class = "btn btn-default"> Удалить </button>
+            </td>
+        </tr>
+    </table>
+</div>
+<!--<div class="container">
+    <div class="row">
+        <div class="col-lg-10 mt-5 mb-5">
+            <table id="example" class="table table-bordered" style="width: 100%">
+
+                </tr>
+                <th:block th:each="device:${deviceByDeviceName}">
+                    <td th:text="${device.getDeviceName()}">Name</td>
+                    <td th:text="${device.getNumberOfDevices()}">Number</td>
+                    <td th:text="${device.getDeviceDescription()}">Description</td>
+
+                    </tr>
+                </th:block>
+            </table>
+        </div>
+    </div>
+</div>
 <div>
     <table>
         <tr>
@@ -28,5 +68,8 @@
         </th:block>
     </table>
 </div>
+<div>
+    <a href="index.html" th:href="@{/}">Главная</a>
+</div> -->
 </body>
 </html>

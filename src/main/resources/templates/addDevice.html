@@ -5,6 +5,7 @@
     <title>Title</title>
 </head>
 <body>
+<div>
 <h1>Form</h1>
 <form action="#" th:action="@{add}" th:object="${device}" method="post">
     <p>Название: <input type="text" th:field="*{deviceName}" /></p>
@@ -12,5 +13,9 @@
     <p>Описание: <input type="text" th:field="*{deviceDescription}" /></p>
     <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
 </form>
+    </div>
+<div>
+    <a href="index.html" th:href="@{/}">Главная</a>
+</div>
 </body>
 </html>
